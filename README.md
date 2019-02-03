@@ -9,7 +9,7 @@ Fedora 64bit.
 
 
 
-# Build Version 29
+# Build Version 30 rawhide
 
 * sudo dnf install mock
 
@@ -20,9 +20,9 @@ Logout/Login.
 
 
 
-* mock -r fedora-29-x86_64 --init
+* mock -r fedora-30-x86_64 --init
 
-* mock -r fedora-29-x86_64 --install lorax-lmc-novirt vim-minimal pykickstart git
+* mock -r fedora-30-x86_64 --install lorax-lmc-novirt vim-minimal pykickstart git
 
 open /etc/mock/site-defaults.cfg And Set config_opts['rpmbuild_networking'] to True .
 * sudo vi /etc/mock/site-defaults.cfg
@@ -36,7 +36,7 @@ If Selinux Enforcing.
 
 
 
-* mock -r fedora-29-x86_64 --shell --old-chroot
+* mock -r fedora-30-x86_64 --shell --old-chroot
 
 * cd /home
 
@@ -47,16 +47,16 @@ If Selinux Enforcing.
 
 
 For Gnome on xorg Default Session.
-* livemedia-creator --ks flat-blueflameos-live-workstation-xorg.ks --no-virt --resultdir /var/lmc --project BlueFlameOS-Workstation-Live --make-iso --volid BlueFlameOS-Workstation-29 --iso-only --iso-name BlueFlameOS-Workstation-Live-29-x86_64.iso --releasever 29 --title BlueFlameOS-Workstation-Live --macboot 
+* livemedia-creator --ks flat-blueflameos-live-workstation-xorg.ks --no-virt --resultdir /var/lmc --project BlueFlameOS-Workstation-Live --make-iso --volid BlueFlameOS-Workstation-30 --iso-only --iso-name BlueFlameOS-Workstation-Live-30-x86_64.iso --releasever 30 --title BlueFlameOS-Workstation-Live --macboot 
 
 
 
 For Gnome Wayland Default Session.
-* livemedia-creator --ks flat-blueflameos-live-workstation.ks --no-virt --resultdir /var/lmc --project BlueFlameOS-Workstation-Live --make-iso --volid BlueFlameOS-Workstation-29 --iso-only --iso-name BlueFlameOS-Workstation-Live-29-x86_64.iso --releasever 29 --title BlueFlameOS-Workstation-Live --macboot 
+* livemedia-creator --ks flat-blueflameos-live-workstation.ks --no-virt --resultdir /var/lmc --project BlueFlameOS-Workstation-Live --make-iso --volid BlueFlameOS-Workstation-30 --iso-only --iso-name BlueFlameOS-Workstation-Live-30-x86_64.iso --releasever 30 --title BlueFlameOS-Workstation-Live --macboot 
 
 
 
 
 When Finish iso Saved in .
-* ls /var/lib/mock/fedora-29-x86_64/root/var/lmc/BlueFlameOS-Workstation-Live-29-x86_64.iso 
+* ls /var/lib/mock/fedora-29-x86_64/root/var/lmc/BlueFlameOS-Workstation-Live-30-x86_64.iso 
 
